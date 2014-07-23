@@ -1,0 +1,138 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Readme_files/filelist.xml">
+<title>Readme Tuner</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>Summary:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This simple example assembly illustrates the use of an assembly
+motion ratio constraint. Unlike other constraints which REQUIRE a topological
+relationship between parts, the motion constraint does not.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The example is of a guitar tuner (a small, manual gearbox).
+In this example, the actual gears were not modeled however the gear RATIO
+between the input and output is 16:1 - that is for every sixteen turns of the
+button, the string post makes a single revolution. This allows a precise amount
+of tension to be applied to the guitar string.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you select the &quot;+&quot; in the tree structure next
+to the component named: button.ipt:1 in the assembly browser and expand you
+will see rotational motion constraint (with <span class=GramE>it's</span>
+ratio) and an angle constraint.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Select the angle constraint. Right-mouse <span class=GramE>click</span>
+to open up the context menu and select DRIVE CONSTRAINT. Inventor
+&quot;remembers&quot; how a constraint was last driven, and I have already
+entered values that will drive this angle from 0 to 350 degrees in increments
+of 10 degrees for a total of three times.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Click the &quot;run&quot; arrow (the left-most arrow on the
+interface) to watch the button turn and the post turn in conjunction with the
+button. NOTE: you may want to adjust your viewing angle so that you can see the
+hole in the string post where the string would actually be anchored - so that
+you can see that the post is also moving.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Because the constraint drive only turns the button a full
+cycle three times, the post only travels approximately 65 degrees (or 3/16ths
+of 360 degrees). You can change the value I have used by expanding the drive
+constraint dialog using the &quot;&gt;&gt;&quot; button on the lower right
+corner of the dialog and changing the &quot;Repetitions&quot; value from 3 to
+another positive integer.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you suppress the angle constraint (by right-mouse
+clicking on the constraint in the browser and then selecting SUPPRESS from the
+context menu), you can simply grab the button with your mouse and turn it,
+causing the post to turn.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The button must make 16 complete cycles for the post to make
+one.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This illustrates the ability to couple assembly components
+using the motion constraint despite the fact that the actual (positioned and
+constrained) parts are not even touching.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
